@@ -1,6 +1,8 @@
 .nav-bar{
 	background-color:#71D0EB;
 	float: left;
+	position: relative;
+	top: -4px;
 
 }
 
@@ -8,6 +10,7 @@
 	text-decoration: none;
 	padding: 17px;
 	width: 150px;
+	margin:	0;
 }
 
 .nav-bar li{
