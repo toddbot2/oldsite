@@ -1,4 +1,8 @@
 /*=======================header========================*/
+.logo{
+	width: 100%;
+}
+
 .nav-bar{
 	background-color:#71D0EB;
 	float: left;
