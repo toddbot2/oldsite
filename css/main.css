@@ -1,5 +1,17 @@
+.nav-bar{
+	background-color:#71D0EB;
+	float: left;
+
+}
+
 .nav-bar ul{
 	text-decoration: none;
-	color: #7f8c8d;
+	padding: 17px;
+	width: 150px;
+}
+
+.nav-bar li{
+	font-size: 30px;
+	padding: 10px;
 }
 
