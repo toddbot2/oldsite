@@ -1,0 +1,1 @@
+$(document).ready(function(){console.log("ready........."),$(".navbar").click(function(){console.log("clicked!!!!!!!");var o=$(".navbar");o.hasClass("expand")?(console.log("removing!!!"),o.removeClass("expand")):(console.log("adding!!!!!!!!111"),o.addClass("expand"))})});

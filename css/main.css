@@ -17,7 +17,8 @@
     height: 250px;
     width: 250px;
     border: solid black 5px;
-    background-color: #71D0EB; }
+    background-color: #71D0EB;
+    color: black; }
     .nav-bar li:first-child {
       margin-left: 80px; }
     .nav-bar li .main-text {
