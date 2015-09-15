@@ -1,0 +1,54 @@
+/*=======================header========================*/
+
+.logo
+  width: 100%
+
+.nav-bar
+  position: relative
+  top: -4px
+  ul
+    text-decoration: none
+    padding: 17px
+    /*width: 181px;*/
+    margin: 0
+  li
+    font-size: 30px
+    margin-left: 150px
+    display: inline-block
+    height: 250px
+    width: 250px
+    border: solid black 5px
+    background-color: #71D0EB
+    &:first-child
+      margin-left: 80px
+    .main-text
+      margin: 0, 15px, 10px, 15px
+
+/*===========================media queries====================*/
+@media (min-width: 825px) and (max-width: 1107px)
+  .nav-bar li  
+    display: block
+    margin-left: 0
+    &:first-child
+      margin-left: 0
+
+@media (max-width: 824px)
+  .logo
+    width: 100%
+  .nav-bar
+    width: 100%
+    ul
+      border-right: none
+    li
+      border: none
+      height: auto
+      width: auto
+      display: block
+      margin-left: 0
+      &:first-child
+        margin-left: 0
+
+/*=========================JS calls===========================*/
+
+.expand
+  color: pink
