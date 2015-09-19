@@ -1,47 +1,79 @@
 /*=======================header======================== */
 .logo {
-  width: 100%; }
+  /* No files to import found in parallax/* ($element: '.container') *\/ */
+  width: 100%;
+  opacity: 0.75;
+  position: absolute; }
 
 .nav-bar {
-  position: relative;
-  top: -4px; }
-  .nav-bar ul {
-    text-decoration: none;
-    padding: 17px;
-    /*width: 181px; */
-    margin: 0; }
-  .nav-bar li {
-    font-size: 30px;
-    margin-left: 150px;
-    display: inline-block;
-    height: 250px;
-    width: 250px;
-    border: solid black 5px;
-    background-color: #71D0EB;
-    color: black; }
-    .nav-bar li:first-child {
-      margin-left: 80px; }
-    .nav-bar li .main-text {
-      margin: 0, 15px, 10px, 15px; }
+  position: relative; }
+
+.main-text {
+  margin: 0, 15px, 10px, 15px; }
+
+.headline {
+  font-family: "Gill Sans";
+  font-variant: "Ultra Bold";
+  text-align: center;
+  color: white;
+  font-size: 200px;
+  opacity: 0.99;
+  z-index: 1; }
+
+.container {
+  height: 522px; }
+
+/* ============================Body============================ */
+.main-text ul {
+  font-family: "didot";
+  font-variant: italic;
+  font-size: 45px;
+  list-style-type: none;
+  padding: 0; }
+
+.parent {
+  background-color: white;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
+  transition: background-color 0.4s; }
+  .parent:hover {
+    background-color: grey;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    transition: background-color 0.4s; }
+
+.drop_down {
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  transition: height 0.5s; }
+
+/* =============================Footer============================ */
+.footer {
+  width: 100%;
+  background-color: gray;
+  height: 250px; }
 
 /*===========================media queries==================== */
 @media (min-width: 825px) and (max-width: 1107px) {
   .nav-bar li {
     display: block;
     margin-left: 0; }
-    .nav-bar li:first-child {
-      margin-left: 0; } }
+  .nav-bar:first-child {
+    margin-left: 0; } }
 @media (max-width: 824px) {
   .logo {
     width: 100%; }
 
   .nav-bar {
-    width: 100%; }
+    width: 100%;
+    height: 0%; }
     .nav-bar ul {
       border-right: none; }
     .nav-bar li {
       border: none;
-      height: auto;
+      height: 0;
       width: auto;
       display: block;
       margin-left: 0; }
@@ -49,4 +81,7 @@
         margin-left: 0; } }
 /*=========================JS calls=========================== */
 .expand {
-  color: pink; }
+  height: 100px;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  transition: height 0.5s; }
