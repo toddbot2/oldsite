@@ -1,9 +1,10 @@
 /*=======================header======================== */
 .logo {
   /* No files to import found in parallax/* ($element: '.container') *\/ */
+  height: 100%;
   width: 100%;
   opacity: 0.75;
-  position: absolute; }
+  /* position: absolute */ }
 
 .nav-bar {
   position: relative; }
@@ -16,20 +17,48 @@
   font-variant: "Ultra Bold";
   text-align: center;
   color: white;
+  margin-top: -378px;
+  margin-bottom: 378px;
   font-size: 200px;
-  opacity: 0.99;
   z-index: 1; }
 
 .container {
-  height: 522px; }
+  height: auto; }
+
+/* =======================parallax============================ */
+.parallax {
+  -webkit-perspective: 1px;
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.layer_0 {
+  transform: translateZ(0); }
+
+.layer_1 {
+  transform: translateZ(-2px) scale(3.35); }
+
+.layer_2 {
+  transform: translateZ(-1px) scale(1); }
 
 /* ============================Body============================ */
 .main-text ul {
   font-family: "didot";
   font-variant: italic;
-  font-size: 45px;
+  font-size: 75px;
   list-style-type: none;
-  padding: 0; }
+  padding: 0;
+  border-top: black solid 2px; }
+  .main-text ul li {
+    border-bottom: black solid 2px; }
 
 .parent {
   background-color: white;
@@ -37,7 +66,7 @@
   -moz-transition: background-color 0.4s;
   transition: background-color 0.4s; }
   .parent:hover {
-    background-color: grey;
+    background-color: #AEA8D3;
     -webkit-transition: background-color 0.4s;
     -moz-transition: background-color 0.4s;
     transition: background-color 0.4s; }
@@ -45,16 +74,11 @@
 .drop_down {
   height: 0;
   overflow: hidden;
-  -webkit-transition: height 0.5s;
-  -moz-transition: height 0.5s;
-  transition: height 0.5s; }
+  -webkit-transition: height 0.7s;
+  -moz-transition: height 0.7s;
+  transition: height 0.7s; }
 
 /* =============================Footer============================ */
-.footer {
-  width: 100%;
-  background-color: gray;
-  height: 250px; }
-
 /*===========================media queries==================== */
 @media (min-width: 825px) and (max-width: 1107px) {
   .nav-bar li {
@@ -81,7 +105,7 @@
         margin-left: 0; } }
 /*=========================JS calls=========================== */
 .expand {
-  height: 100px;
-  -webkit-transition: height 0.5s;
-  -moz-transition: height 0.5s;
-  transition: height 0.5s; }
+  height: 500px;
+  -webkit-transition: height 0.7s;
+  -moz-transition: height 0.7s;
+  transition: height 0.7s; }
