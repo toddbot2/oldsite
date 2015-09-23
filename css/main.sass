@@ -9,13 +9,17 @@
 /*=======================header========================*/
 
 .logo
-  @import parallax/* ($element: '.container') */
   height: 100%
   width: 100%
   opacity: .75
+  img
+    min-height: 100%
+    max-width: 1024px
+  .bxslider
+    transform: translate3D(0,0,0)
   /* position: absolute */
 .nav-bar
-  position: relative
+  //position: relative
   // ul
   //   text-decoration: none
   //   padding: 17px
@@ -58,14 +62,12 @@
   right: 0
   bottom: 0
   left: 0
-.layer_0 
-  @include transform(translateZ(0))
-.layer_1
-  @include transform(translateZ(-2px) scale(3.35))
-.layer_2
-  @include transform(translateZ(-1px) scale(1))
-
-
+.menu
+  @include transform(translate3D(0px, -250%, 0px))
+.top_photo
+  @include transform(translate3D(0, 0, -1px) scale(2.5))
+.bot_photo
+  @include transform(translate3D(0, 75%, -1px) scale(1.3))
 /* ============================Body============================ */
 .main-text
   ul

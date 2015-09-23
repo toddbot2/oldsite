@@ -21,4 +21,7 @@ $(document).ready(function(){
 			proj.addClass('expand');
 		}
 	});
+	$('.bxslider').bxSlider({
+	  auto: true,
+	});
 });

@@ -1,14 +1,15 @@
 /* =========================mixin========================= */
 /*=======================header======================== */
 .logo {
-  /* No files to import found in parallax/* ($element: '.container') *\/ */
   height: 100%;
   width: 100%;
   opacity: 0.75;
   /* position: absolute */ }
-
-.nav-bar {
-  position: relative; }
+  .logo img {
+    min-height: 100%;
+    max-width: 1024px; }
+  .logo .bxslider {
+    transform: translate3D(0, 0, 0); }
 
 .main-text {
   margin: 0, 15px, 10px, 15px; }
@@ -40,26 +41,26 @@
   bottom: 0;
   left: 0; }
 
-.layer_0 {
-  -webkit-transform: translateZ(0);
-  -moz-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  -o-transform: translateZ(0);
-  transform: translateZ(0); }
+.menu {
+  -webkit-transform: translate3D(0px, -250%, 0px);
+  -moz-transform: translate3D(0px, -250%, 0px);
+  -ms-transform: translate3D(0px, -250%, 0px);
+  -o-transform: translate3D(0px, -250%, 0px);
+  transform: translate3D(0px, -250%, 0px); }
 
-.layer_1 {
-  -webkit-transform: translateZ(-2px) scale(3.35);
-  -moz-transform: translateZ(-2px) scale(3.35);
-  -ms-transform: translateZ(-2px) scale(3.35);
-  -o-transform: translateZ(-2px) scale(3.35);
-  transform: translateZ(-2px) scale(3.35); }
+.top_photo {
+  -webkit-transform: translate3D(0, 0, -1px) scale(2.5);
+  -moz-transform: translate3D(0, 0, -1px) scale(2.5);
+  -ms-transform: translate3D(0, 0, -1px) scale(2.5);
+  -o-transform: translate3D(0, 0, -1px) scale(2.5);
+  transform: translate3D(0, 0, -1px) scale(2.5); }
 
-.layer_2 {
-  -webkit-transform: translateZ(-1px) scale(1);
-  -moz-transform: translateZ(-1px) scale(1);
-  -ms-transform: translateZ(-1px) scale(1);
-  -o-transform: translateZ(-1px) scale(1);
-  transform: translateZ(-1px) scale(1); }
+.bot_photo {
+  -webkit-transform: translate3D(0, 75%, -1px) scale(1.3);
+  -moz-transform: translate3D(0, 75%, -1px) scale(1.3);
+  -ms-transform: translate3D(0, 75%, -1px) scale(1.3);
+  -o-transform: translate3D(0, 75%, -1px) scale(1.3);
+  transform: translate3D(0, 75%, -1px) scale(1.3); }
 
 /* ============================Body============================ */
 .main-text ul {
