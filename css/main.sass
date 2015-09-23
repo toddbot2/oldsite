@@ -1,3 +1,11 @@
+/* =========================mixin========================= */
+@mixin transform($x)
+  -webkit-transform: $x
+  -moz-transform: $x
+  -ms-transform: $x
+  -o-transform: $x
+  transform: $x
+
 /*=======================header========================*/
 
 .logo
@@ -30,9 +38,10 @@
   font-variant: "Ultra Bold"
   text-align: center
   color: white
-  margin-top: -378px
-  margin-bottom: 378px
-  font-size: 200px 
+  //margin-top: -378px
+  //margin-bottom: 378px
+  font-size: 130px 
+  display: inline
   z-index: 1
 .container
   height: auto
@@ -50,11 +59,11 @@
   bottom: 0
   left: 0
 .layer_0 
-  transform: translateZ(0)
+  @include transform(translateZ(0))
 .layer_1
-  transform: translateZ(-2px) scale(3.35)
+  @include transform(translateZ(-2px) scale(3.35))
 .layer_2
-  transform: translateZ(-1px) scale(1)
+  @include transform(translateZ(-1px) scale(1))
 
 
 /* ============================Body============================ */

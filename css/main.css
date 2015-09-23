@@ -1,3 +1,4 @@
+/* =========================mixin========================= */
 /*=======================header======================== */
 .logo {
   /* No files to import found in parallax/* ($element: '.container') *\/ */
@@ -17,9 +18,8 @@
   font-variant: "Ultra Bold";
   text-align: center;
   color: white;
-  margin-top: -378px;
-  margin-bottom: 378px;
-  font-size: 200px;
+  font-size: 130px;
+  display: inline;
   z-index: 1; }
 
 .container {
@@ -41,12 +41,24 @@
   left: 0; }
 
 .layer_0 {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
   transform: translateZ(0); }
 
 .layer_1 {
+  -webkit-transform: translateZ(-2px) scale(3.35);
+  -moz-transform: translateZ(-2px) scale(3.35);
+  -ms-transform: translateZ(-2px) scale(3.35);
+  -o-transform: translateZ(-2px) scale(3.35);
   transform: translateZ(-2px) scale(3.35); }
 
 .layer_2 {
+  -webkit-transform: translateZ(-1px) scale(1);
+  -moz-transform: translateZ(-1px) scale(1);
+  -ms-transform: translateZ(-1px) scale(1);
+  -o-transform: translateZ(-1px) scale(1);
   transform: translateZ(-1px) scale(1); }
 
 /* ============================Body============================ */
