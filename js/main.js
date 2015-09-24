@@ -1,6 +1,6 @@
 $(document).ready(function(){
     console.log("ready.........");
-	$('.nav-bar').click(function(){
+	/*$('.nav-bar').click(function(){
         console.log("clicked!!!!!!!");
 		var list = $('.nav-bar');
 		if (list.hasClass('expand')) {
@@ -10,7 +10,7 @@ $(document).ready(function(){
             console.log('adding!!!!!!!!111');
 			list.addClass('expand');
         }
-	});
+	});*/
 	$('.parent').click(function(){
 		var proj = $('.drop_down', this);
 		console.log('is this thing on?');
@@ -23,5 +23,6 @@ $(document).ready(function(){
 	});
 	$('.bxslider').bxSlider({
 	  auto: true,
+	  easing: 'ease-in-out',
 	});
 });
