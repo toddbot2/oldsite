@@ -1,5 +1,6 @@
 /* =========================mixin========================= */
 @import 'jquery.bxslider'
+@import 'flex_box'
 @mixin transform($x)
   -webkit-transform: $x
   -moz-transform: $x
@@ -13,9 +14,6 @@
   height: 100%
   width: 100%
   opacity: .75
-  img
-    min-height: 100%
-    min-width: 791px
   .bxslider
     transform: translate3D(0,0,0)
   /* position: absolute */
@@ -68,7 +66,7 @@
 .top_photo
   @include transform(translate3D(0, 0, -1px) scale(2))
 .bot_photo
-  @include transform(translate3D(0, 75%, -1px) scale(1.3))
+  @include transform(translate3D(0, 350px, -1px) scale(1.3))
 /* ============================Body============================ */
 .main-text
   ul
@@ -80,11 +78,16 @@
     border-top: black solid 2px
     li
       border-bottom: black solid 2px
+    div
+      width: 100%
 .parent
   background-color: white
   -webkit-transition: background-color 0.4s
   -moz-transition: background-color 0.4s
   transition: background-color 0.4s
+  height: 200px
+  width: 300px
+  float: left
   &:hover
     background-color: #AEA8D3
     -webkit-transition: background-color 0.4s
@@ -93,10 +96,15 @@
 .drop_down
   height: 0
   overflow: hidden
-  -webkit-transition: height 0.7s 
-  -moz-transition: height 0.7s
-  transition: height 0.7s
-
+  -webkit-transition: height 0.3s 
+  -moz-transition: height 0.3s
+  transition: height 0.3s
+  position: absolute
+.buttons
+  @include flexbox()
+  justify-content: space-between
+  background-color: black
+  height: 600px
 /* =============================Footer============================ */
 
 
@@ -128,6 +136,6 @@
 
 .expand
   height: 500px
-  -webkit-transition: height 0.7s 
-  -moz-transition: height 0.7s
-  transition: height 0.7s
+  -webkit-transition: height 0.3s 
+  -moz-transition: height 0.3s
+  transition: height 0.3s
