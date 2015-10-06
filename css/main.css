@@ -169,25 +169,6 @@
   font-size: .85em;
   padding: 10px; }
 
-.wrapper {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex; }
-
-.item {
-  -webkit-box-flex: 1 200px;
-  -moz-box-flex: 1 200px;
-  -webkit-flex: 1 200px;
-  -ms-flex: 1 200px;
-  flex: 1 200px;
-  -webkit-box-ordinal-group: 2;
-  -moz-box-ordinal-group: 2;
-  -ms-flex-order: 2;
-  -webkit-order: 2;
-  order: 2; }
-
 /*=======================header======================== */
 .logo {
   height: 100%;
@@ -261,14 +242,19 @@
   .main-text ul div {
     width: 100%; }
 
+.buttons {
+  /* @include flexbox() */
+  width: 100%; }
+
 .parent {
   background-color: white;
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   transition: background-color 0.4s;
-  height: 200px;
-  width: 300px;
-  float: left; }
+  height: 400px;
+  width: 400px; }
+  .parent .icon {
+    max-width: 100%; }
   .parent:hover {
     background-color: #AEA8D3;
     -webkit-transition: background-color 0.4s;
@@ -282,19 +268,31 @@
   -moz-transition: height 0.3s;
   transition: height 0.3s;
   position: absolute; }
+  .drop_down ul {
+    background-color: white; }
+  .drop_down .list_2 ul {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: center; }
 
-.buttons {
+.flex-con {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  display: flex;
-  justify-content: space-between;
-  background-color: black;
-  height: 600px; }
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  height: 600px;
+  background-color: black; }
 
-/* =============================Footer============================ */
 /*===========================media queries==================== */
 @media (min-width: 825px) and (max-width: 1107px) {
   .nav-bar li {
@@ -325,3 +323,5 @@
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   transition: height 0.3s; }
+
+/*# sourceMappingURL=main.css.map */
