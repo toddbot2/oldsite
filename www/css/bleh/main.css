@@ -1,0 +1,69 @@
+/*=======================header========================*/
+.logo{
+	width: 100%;
+
+}
+
+
+
+.nav-bar{
+	position: relative;
+	top: -4px;
+}
+
+.nav-bar ul{
+	text-decoration: none;
+	padding: 17px;
+	/*width: 181px;*/
+	margin:	0;
+	
+}
+
+.nav-bar li{
+	font-size: 30px;
+	padding: 10px;
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	border: solid black 5px;
+	background-color:#71D0EB;
+}
+
+.nav-bar li
+
+/*==========================main text======================*/
+.main-text{
+	margin: 0, 15px, 10px, 15px; 
+}
+
+
+/*===========================media queries====================*/
+@media (min-width:825px) and (max-width:1107px){
+	.nav-bar li{
+		display: block;
+	}	
+}
+
+@media (max-width: 824px){
+	.logo{
+		width: 100%;
+
+	}
+	.nav-bar{
+		width: 100%;
+	}
+	.nav-bar ul{
+		border-right: none;
+	}
+	.nav-bar li{
+		border: none;
+		height: auto;
+		width:auto;
+		display: block
+	}
+}
+
+/*=========================JS calls===========================*/
+.expand{
+	color: pink;
+}
