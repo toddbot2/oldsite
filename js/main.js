@@ -26,7 +26,7 @@ $(document).ready(function(){
 	  easing: 'ease-in-out',
 	});
 
-	$('preshow').click(function(){
+	$('.preshow').click(function(){
 		console.log("hello mother")
 		var pic = $('showcase', this);
 		console.log('hello mom?')
