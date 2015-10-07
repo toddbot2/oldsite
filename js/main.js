@@ -25,4 +25,15 @@ $(document).ready(function(){
 	  auto: true,
 	  easing: 'ease-in-out',
 	});
+
+	$('preshow').click(function(){
+		var pic = $('showcase', this);
+		console.log('hello mom?')
+		if (pic.hasClass('drop')){
+			pic.removeClass('drop');
+		}
+		else{
+			pic.addClass('drop');
+		}
+	});	
 });

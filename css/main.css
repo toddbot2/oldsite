@@ -186,7 +186,7 @@
   font-variant: "Ultra Bold";
   text-align: center;
   color: white;
-  font-size: 130px;
+  font-size: 7.5em;
   display: inline;
   z-index: 1; }
 
@@ -223,24 +223,27 @@
   transform: translate3D(0, 0, -1px) scale(2); }
 
 .bot_photo {
-  -webkit-transform: translate3D(0, 350px, -1px) scale(1.3);
-  -moz-transform: translate3D(0, 350px, -1px) scale(1.3);
-  -ms-transform: translate3D(0, 350px, -1px) scale(1.3);
-  -o-transform: translate3D(0, 350px, -1px) scale(1.3);
-  transform: translate3D(0, 350px, -1px) scale(1.3); }
+  -webkit-transform: translate3D(0, 350px, -1px) scale(1.5);
+  -moz-transform: translate3D(0, 350px, -1px) scale(1.5);
+  -ms-transform: translate3D(0, 350px, -1px) scale(1.5);
+  -o-transform: translate3D(0, 350px, -1px) scale(1.5);
+  transform: translate3D(0, 350px, -1px) scale(1.5);
+  background-color: black; }
 
 /* ============================Body============================ */
 .main-text ul {
   font-family: "didot";
   font-variant: italic;
-  font-size: 75px;
   list-style-type: none;
   padding: 0;
   border-top: black solid 2px; }
   .main-text ul li {
-    border-bottom: black solid 2px; }
+    border-bottom: black solid 2px;
+    font-size: 3em; }
+    .main-text ul li ul {
+      font-size: 0.3em; }
   .main-text ul div {
-    width: 100%; }
+    width: 27.98%; }
 
 .buttons {
   /* @include flexbox() */
@@ -261,13 +264,17 @@
     -moz-transition: background-color 0.4s;
     transition: background-color 0.4s; }
 
+.icon_text {
+  color: white; }
+
 .drop_down {
   height: 0;
   overflow: hidden;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   transition: height 0.3s;
-  position: absolute; }
+  position: absolute;
+  margin-top: -89px; }
   .drop_down ul {
     background-color: white; }
   .drop_down .list_2 ul {
@@ -291,8 +298,17 @@
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
-  height: 600px;
+  min-height: 700px;
   background-color: black; }
+
+.preshow:hover {
+  background-color: #AEA8D3;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition: background-color 0.4s;
+  transition: background-color 0.4s; }
+
+.showcase {
+  height: 0px; }
 
 /*===========================media queries==================== */
 @media (min-width: 825px) and (max-width: 1107px) {
@@ -321,6 +337,12 @@
 /*=========================JS calls=========================== */
 .expand {
   height: 500px;
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s; }
+
+.drop {
+  height: 100px;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   transition: height 0.3s; }
