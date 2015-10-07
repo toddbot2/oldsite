@@ -302,13 +302,14 @@
   background-color: black; }
 
 .preshow:hover {
-  background-color: #AEA8D3;
+  background-color: pink;
   -webkit-transition: background-color 0.4s;
   -moz-transition: background-color 0.4s;
   transition: background-color 0.4s; }
 
 .showcase {
-  height: 0px; }
+  height: 0px;
+  overflow: hidden; }
 
 /*===========================media queries==================== */
 @media (min-width: 825px) and (max-width: 1107px) {

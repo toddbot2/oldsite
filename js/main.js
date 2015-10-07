@@ -27,6 +27,7 @@ $(document).ready(function(){
 	});
 
 	$('preshow').click(function(){
+		console.log("hello mother")
 		var pic = $('showcase', this);
 		console.log('hello mom?')
 		if (pic.hasClass('drop')){
