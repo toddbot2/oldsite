@@ -26,15 +26,18 @@ $(document).ready(function(){
 	  easing: 'ease-in-out',
 	});
 
-	$('.preshow').click(function(){
+	$('.preshow').click(function(event){
 		console.log("hello mother")
-		var pic = $('showcase', this);
+		var pic = $('.showcase', this);
 		console.log('hello mom?')
 		if (pic.hasClass('drop')){
+			console.log('hello dawg')
 			pic.removeClass('drop');
 		}
 		else{
+			console.log('fucks')
 			pic.addClass('drop');
 		}
+		event.stopPropagation();
 	});	
 });

@@ -301,12 +301,14 @@
   min-height: 700px;
   background-color: black; }
 
-.preshow:hover {
-  background-color: pink;
-  overflow: hidden;
-  -webkit-transition: background-color 0.4s;
-  -moz-transition: background-color 0.4s;
-  transition: background-color 0.4s; }
+.preshow {
+  background-color: white; }
+  .preshow:hover {
+    background-color: pink;
+    overflow: hidden;
+    -webkit-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    transition: background-color 0.4s; }
 
 .showcase {
   height: 0px;

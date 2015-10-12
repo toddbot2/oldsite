@@ -1,0 +1,32 @@
+// Start out with the stuff hidden. You can do this in CSS instead if you like.
+$('.stuff_to_show li').hide();
+
+// Loop over all the *containing* elements, which have both the button and the thing to be hidden and shown.
+$('.buttons li').each(function (i, li) {
+    // This time, we'll use that index, `i`, to select the right element of the other list.
+    var button = $(li);
+    var thing_to_show = $('.stuff_to_show li:eq(' + i + ')');
+    
+    // Here's the handler itself.
+    button.click(function () {
+        // N.B. There's no `this` used at all here!
+        thing_to_show.slideToggle();
+    });
+});
+
+
+
+
+
+<ul class="buttons">
+    <li>one</li>
+    <li>two</li>
+</ul>
+<ul class="stuff_to_show">
+    <li>
+        expand this
+    </li>
+    <li>
+        instead consider expanding this
+    </li>
+</ul>
