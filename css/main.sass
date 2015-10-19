@@ -39,8 +39,6 @@
   //   color: black
   //   &:first-child
   //     margin-left: 80px
-.main-text
-  margin: 0, 15px, 10px, 15px
 .headline
   font-family: "Gill Sans"
   font-variant: "Ultra Bold"
@@ -67,21 +65,22 @@
   bottom: 0
   left: 0
 .menu
-  @include transform(translate3D(0px, -1700px, 0px))
+  margin-top: -475px
+  @include transform(translate3D(0px, 0px, 0px))
 .top_photo
-  @include transform(translate3D(0, 0, -1px) scale(2))
+  @include transform(translate3D(0, 0px, -1px) scale(2))
 .bot_photo
-  @include transform(translate3D(0, 350px, -1px) scale(1.5))
+  @include transform(translate3D(0, 0px, -1px) scale(1.5))
   background-color: black
   
 
 /* ============================Body============================ */
 .main-text
+  margin: 0, 15px, 10px, 15px
   ul
     font-family: "didot"
     font-variant: italic
     list-style-type: none
-    padding: 0
     border-top: black solid 2px
     li
       border-bottom: black solid 2px
@@ -89,7 +88,7 @@
       ul
         font-size: 0.3em
     div
-      width: 27.98%
+      width: 100%
 .buttons
   /* @include flexbox() */
   width: 100%
@@ -121,7 +120,7 @@
   -moz-transition: height 0.3s
   transition: height 0.3s
   position: absolute
-  margin-top: -89px
+  /* margin-top: -89px */
   ul
     background-color: white
   //.list_1
@@ -146,8 +145,10 @@
   -webkit-align-items: center
   -moz-align-items: center
   align-items: center
-  min-height: 700px
+  min-height: 500px
+  padding-bottom: 20px
   background-color: black
+  margin-bottom: 0
 .preshow
   background-color: white
   &:hover
@@ -160,6 +161,10 @@
   height: 0px
   overflow: hidden
   //.flex-child
+.fudder
+  height: 500px
+  width: 100%
+  background-color: grey
 /*===========================media queries====================*/
 @media (min-width: 825px) and (max-width: 1107px)
   .nav-bar
@@ -196,3 +201,7 @@
   -webkit-transition: height 0.3s 
   -moz-transition: height 0.3s
   transition: height 0.3s
+
+.resize
+  height: 1000px
+  width: 1000px

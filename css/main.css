@@ -178,9 +178,6 @@
   .logo .bxslider {
     transform: translate3D(0, 0, 0); }
 
-.main-text {
-  margin: 0, 15px, 10px, 15px; }
-
 .headline {
   font-family: "Gill Sans";
   font-variant: "Ultra Bold";
@@ -209,41 +206,43 @@
   left: 0; }
 
 .menu {
-  -webkit-transform: translate3D(0px, -1700px, 0px);
-  -moz-transform: translate3D(0px, -1700px, 0px);
-  -ms-transform: translate3D(0px, -1700px, 0px);
-  -o-transform: translate3D(0px, -1700px, 0px);
-  transform: translate3D(0px, -1700px, 0px); }
+  margin-top: -475px;
+  -webkit-transform: translate3D(0px, 0px, 0px);
+  -moz-transform: translate3D(0px, 0px, 0px);
+  -ms-transform: translate3D(0px, 0px, 0px);
+  -o-transform: translate3D(0px, 0px, 0px);
+  transform: translate3D(0px, 0px, 0px); }
 
 .top_photo {
-  -webkit-transform: translate3D(0, 0, -1px) scale(2);
-  -moz-transform: translate3D(0, 0, -1px) scale(2);
-  -ms-transform: translate3D(0, 0, -1px) scale(2);
-  -o-transform: translate3D(0, 0, -1px) scale(2);
-  transform: translate3D(0, 0, -1px) scale(2); }
+  -webkit-transform: translate3D(0, 0px, -1px) scale(2);
+  -moz-transform: translate3D(0, 0px, -1px) scale(2);
+  -ms-transform: translate3D(0, 0px, -1px) scale(2);
+  -o-transform: translate3D(0, 0px, -1px) scale(2);
+  transform: translate3D(0, 0px, -1px) scale(2); }
 
 .bot_photo {
-  -webkit-transform: translate3D(0, 350px, -1px) scale(1.5);
-  -moz-transform: translate3D(0, 350px, -1px) scale(1.5);
-  -ms-transform: translate3D(0, 350px, -1px) scale(1.5);
-  -o-transform: translate3D(0, 350px, -1px) scale(1.5);
-  transform: translate3D(0, 350px, -1px) scale(1.5);
+  -webkit-transform: translate3D(0, 0px, -1px) scale(1.5);
+  -moz-transform: translate3D(0, 0px, -1px) scale(1.5);
+  -ms-transform: translate3D(0, 0px, -1px) scale(1.5);
+  -o-transform: translate3D(0, 0px, -1px) scale(1.5);
+  transform: translate3D(0, 0px, -1px) scale(1.5);
   background-color: black; }
 
 /* ============================Body============================ */
-.main-text ul {
-  font-family: "didot";
-  font-variant: italic;
-  list-style-type: none;
-  padding: 0;
-  border-top: black solid 2px; }
-  .main-text ul li {
-    border-bottom: black solid 2px;
-    font-size: 3em; }
-    .main-text ul li ul {
-      font-size: 0.3em; }
-  .main-text ul div {
-    width: 27.98%; }
+.main-text {
+  margin: 0, 15px, 10px, 15px; }
+  .main-text ul {
+    font-family: "didot";
+    font-variant: italic;
+    list-style-type: none;
+    border-top: black solid 2px; }
+    .main-text ul li {
+      border-bottom: black solid 2px;
+      font-size: 3em; }
+      .main-text ul li ul {
+        font-size: 0.3em; }
+    .main-text ul div {
+      width: 100%; }
 
 .buttons {
   /* @include flexbox() */
@@ -274,7 +273,7 @@
   -moz-transition: height 0.3s;
   transition: height 0.3s;
   position: absolute;
-  margin-top: -89px; }
+  /* margin-top: -89px */ }
   .drop_down ul {
     background-color: white; }
   .drop_down .list_2 ul {
@@ -298,8 +297,10 @@
   -webkit-align-items: center;
   -moz-align-items: center;
   align-items: center;
-  min-height: 700px;
-  background-color: black; }
+  min-height: 500px;
+  padding-bottom: 20px;
+  background-color: black;
+  margin-bottom: 0; }
 
 .preshow {
   background-color: white; }
@@ -313,6 +314,11 @@
 .showcase {
   height: 0px;
   overflow: hidden; }
+
+.fudder {
+  height: 500px;
+  width: 100%;
+  background-color: grey; }
 
 /*===========================media queries==================== */
 @media (min-width: 825px) and (max-width: 1107px) {
@@ -350,5 +356,9 @@
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   transition: height 0.3s; }
+
+.resize {
+  height: 1000px;
+  width: 1000px; }
 
 /*# sourceMappingURL=main.css.map */

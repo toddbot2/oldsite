@@ -18,14 +18,13 @@ $(document).ready(function(){
 			proj.removeClass('expand');
 		}
 		 else{
-			proj.addClass('expand');
+			proj.addClass('expand', 'bxslider');
 		}
 	});
 	$('.bxslider').bxSlider({
 	  auto: true,
 	  easing: 'ease-in-out',
 	});
-
 	$('.preshow').click(function(event){
 		console.log("hello mother")
 		var pic = $('.showcase', this);
