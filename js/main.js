@@ -18,13 +18,24 @@ $(document).ready(function(){
 			proj.removeClass('expand');
 		}
 		 else{
-			proj.addClass('expand', 'bxslider');
+			proj.addClass('expand');
 		}
+		event.stopPropagation();
 	});
-	$('.bxslider').bxSlider({
+	$('.slider1').bxSlider({
 	  auto: true,
 	  easing: 'ease-in-out',
 	});
+	$('.slider2').bxSlider({
+	  auto: false,
+	  slideWidth: 1000,
+	  minSlides: 2,
+	  maxSlides: 2,
+	  moveSlides: 2,
+	  controls: 'true',
+	  nextText: '<img src="http://i.imgur.com/TZDsPC0.png" height="50" width="50"/>',
+      prevText: '<img src="http://i.imgur.com/AKjTWvT.png" height="50" width="50"/>'
+  });
 	$('.preshow').click(function(event){
 		console.log("hello mother")
 		var pic = $('.showcase', this);

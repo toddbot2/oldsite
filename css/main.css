@@ -273,6 +273,7 @@
   -moz-transition: height 0.3s;
   transition: height 0.3s;
   position: absolute;
+  left: 0px;
   /* margin-top: -89px */ }
   .drop_down ul {
     background-color: white; }
@@ -316,7 +317,7 @@
   overflow: hidden; }
 
 .fudder {
-  height: 500px;
+  height: 1000px;
   width: 100%;
   background-color: grey; }
 
