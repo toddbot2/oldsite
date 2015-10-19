@@ -20,6 +20,8 @@ $(document).ready(function(){
 		 else{
 			proj.addClass('expand');
 		}
+	});
+	$('.drop_down').click(function(){
 		event.stopPropagation();
 	});
 	$('.slider1').bxSlider({
